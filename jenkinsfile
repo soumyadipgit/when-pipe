@@ -5,7 +5,12 @@ stages {
          steps {
             echo "deploying"
             }
-            
+           when {
+             not {
+              branch 'master'
+              }
+           }
+ 
           }
         }
     }
