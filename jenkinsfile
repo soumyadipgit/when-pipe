@@ -5,9 +5,7 @@ stages {
          steps {
             echo "deploying"
             }
-            when {
-          branch 'master'
-          }
+            
           }
         }
     }
