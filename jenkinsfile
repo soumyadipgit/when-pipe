@@ -3,9 +3,9 @@ agent any
 stages {
         stage('deploy') {
         when {
-             not {
+             
               branch 'master'
-              }
+              
            }
          steps {
             echo "deploying"
