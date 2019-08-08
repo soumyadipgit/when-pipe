@@ -2,14 +2,15 @@ pipeline {
 agent any
 stages {
         stage('deploy') {
-         steps {
-            echo "deploying"
-            }
-           when {
+        when {
              not {
               branch 'master'
               }
            }
+         steps {
+            echo "deploying"
+            }
+           
  
           }
         }
